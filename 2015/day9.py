@@ -6,12 +6,22 @@ def find_dist(c1, c2, roads):
             return road[2]
 
 def get_permutations(cities):
-    final = [[]]
+    roads = [[]]
     l = len(cities)
     groups = [list(cities)] * l
     for i in groups:
-        final = [x+[y] for x in final for y in i]
-    return final
+        roads = [x + [y] for x in roads for y in i]
+        # Remove roads with cities appearing more than once
+        j = 0
+        while j < len(roads):
+            road = roads[j]
+            for city in road:
+                if road.count(city) > 1:
+                    del(roads[j])
+                    j = j - 1
+                    break
+            j = j + 1
+    return roads
 
 input = open("input.txt")
 
@@ -27,7 +37,6 @@ for line in input:
     roads.append([v1, v2, int(dist)])
 
 proads = get_permutations(cities)
-
 min_dist = sys.maxsize
 max_dist = 0
 
