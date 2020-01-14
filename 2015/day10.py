@@ -1,9 +1,5 @@
 input = "1113122113"
 
-counter = 1
-val = input[0]
-res = ""
-
 for k in range(50):
     counter = 1
     val = input[0]
