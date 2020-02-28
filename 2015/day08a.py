@@ -1,5 +1,5 @@
 
-input = open("input.txt", "r")
+input = open("input", "r")
 
 nbc = 0
 nbm = 0

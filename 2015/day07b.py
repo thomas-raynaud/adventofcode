@@ -50,7 +50,7 @@ def decode_instructions(input, variables):
             else:
                 i = i + 1
 
-input = open("input.txt", "r")
+input = open("input", "r")
 
 instructions = []
 variables = dict()

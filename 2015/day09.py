@@ -23,7 +23,7 @@ def get_permutations(cities):
             j = j + 1
     return roads
 
-input = open("input.txt")
+input = open("input")
 
 cities = []
 roads = []

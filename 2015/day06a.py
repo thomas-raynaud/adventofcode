@@ -5,7 +5,7 @@ def to_img(lights):
     rescaled = (255 * lights).astype(np.uint8)
     img = Image.fromarray(rescaled).save("lights.jpg")
 
-input = open("input.txt", "r")
+input = open("input", "r")
 lights = np.zeros((1000, 1000))
 for instruction in input:
     switch_type = 2
