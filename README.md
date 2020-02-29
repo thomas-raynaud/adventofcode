@@ -4,4 +4,4 @@
 
 I use this repository to give my solutions to the puzzles.
 
-*More info on this page: https://adventofcode.com/2019/about*
+*More info on this page: https://adventofcode.com/about*
