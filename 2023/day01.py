@@ -3,7 +3,7 @@ c_spelled_out_numbers_trunc = [number[0:3] for number in c_spelled_out_numbers]
 
 output = 0
 
-for line in open("input_d1"):
+for line in open("input_d01"):
     first_digit = ''
     last_digit = ''
     digit = ''
